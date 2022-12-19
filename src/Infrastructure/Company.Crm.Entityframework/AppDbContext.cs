@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Company.Crm.Entityframework
 {
@@ -20,6 +15,13 @@ namespace Company.Crm.Entityframework
         {
 
         }
+
+        public DbSet<Employee> Employees { get; set; }
+        //public DbSet<User> Users { get; set; }
+        //public DbSet<Gender> Genders { get; set; }
+        //public DbSet<Department> Departments { get; set; }
+        //public DbSet<StatusType> StatusTypes { get; set; }
+        //public DbSet<Region> Regions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
