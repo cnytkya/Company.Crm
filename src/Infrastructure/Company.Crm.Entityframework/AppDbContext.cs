@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Company.Crm.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Company.Crm.Entityframework
 {
@@ -17,6 +18,7 @@ namespace Company.Crm.Entityframework
         }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         //public DbSet<User> Users { get; set; }
         //public DbSet<Gender> Genders { get; set; }
         //public DbSet<Department> Departments { get; set; }
